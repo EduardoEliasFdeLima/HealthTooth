@@ -1,0 +1,266 @@
+.line-top1{
+    width: 100%;
+    background-color: #DFF5FD;
+    height: 15px;    
+}
+
+.line-top2{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #DFF5FD;
+    height: 30px;
+}
+
+.lineBG{ 
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 100vh;
+    background-color: #DFF5FD;
+    padding: 100px 200px;
+}
+
+.lineBG h1{
+    font-family: 'Roboto Slab';
+}
+
+#left,#right{
+    display: none;
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    z-index: 20;
+}
+
+#right{
+    right: 30px;
+}
+
+
+.gradient-text2 {
+    background: linear-gradient(to right, #284A77, #4A8ADD);
+    -webkit-background-clip: text; /* Aplica o gradiente ao texto */
+    -webkit-text-fill-color: transparent; /* Faz o fundo ser transparente */
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+.slides{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    transition: 1s;
+
+}
+
+.card-slide{
+    background: linear-gradient(to bottom, #ADDCFF, #67e3ff);
+    border-radius: 10px;
+    height: 400px;
+    transition: .1s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:  30px;
+    text-align: center;
+    font-family: 'Roboto';
+    color: #2C4246;
+}
+
+.card-slide:hover{
+    animation: floattop .2s ease-in;
+}
+
+@keyframes floattop {
+    to{
+        margin-top: 0px;
+    }
+
+    50%{
+        margin-top: -10px;
+    }
+  
+}
+
+.img-slide{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #e8eff1;
+    overflow: hidden;
+
+}
+
+.img-slide img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+}
+
+.txt-slide{
+    padding: 20px 0;
+}
+
+
+.txt-slide h2{
+    color: #1e2c2e;
+    font-family: 'Roboto Slab';
+}
+
+.txt-slide p{
+    margin-top: 15px;
+}
+
+
+
+@media screen and (max-width: 1300px) { 
+
+    .lineBG{ 
+        padding: 100px 100px;
+    }
+
+    .card-slide{
+        border-radius: 10px;
+        height: 360px;
+        padding:  20px;
+    }
+        
+    .img-slide{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) { 
+
+    .lineBG h1{
+        font-size: 40px;
+    }
+
+    .lineBG{ 
+        height: auto;
+        padding: 70px 30px;
+        padding-bottom: 100px;
+    }
+
+    .slides{
+        gap: 20px;
+    }
+
+    .card-slide{
+        padding: 20px;
+        height: 300px;
+    }
+   
+    .img-slide{
+        width: 100px;
+        height: 100px;
+    }
+
+    .txt-slide p{
+      font-size: 13px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 750px) {
+
+    .lineBG{
+        height: max-content;
+    }
+    .card-slide{
+        justify-content: stretch;
+        align-items: center;
+        height: max-content;
+        padding: 15px;
+    }
+
+    .txt-slide p{
+        height: 80px;
+        overflow-y: scroll;
+    }
+
+}
+
+
+
+ 
+@media screen and (max-width: 550px) { 
+
+    .lineBG{
+        height: 70vh;
+    }
+
+    .slides{
+        position: absolute;
+        width: 1230px;
+        margin-bottom: 100px;
+        min-height: 60vh;
+        left: 80px;
+        right: 0;
+        overflow: hidden;  
+        gap: 80px;
+    }
+
+    .card-slide{
+        border-radius: 10px;
+        width: 280px;
+        height: 350px;
+        padding: 30px;
+    }
+
+        
+    .img-slide{
+        width: 120px;
+        height: 120px;
+    }
+
+    .txt-slide h2{
+        font-size: 25px;
+    }
+
+    .txt-slide p{
+        font-size: inherit;
+    }
+
+        
+    #left,#right{
+        display: block;
+    }
+
+
+}
+
+
+ 
+@media screen and (max-width: 450px) { 
+ 
+    .lineBG{ 
+        padding: 40px 30px;
+        height: 70vh;
+        min-height: 600px;
+    }
+
+    .lineBG h1{
+        font-size: 35px;
+    }
+    
+    .slides{
+        padding: 0 auto;
+        gap: 150px;
+    }
+
+}

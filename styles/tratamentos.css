@@ -1,0 +1,150 @@
+#tratamentos{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    height: max-content;
+    background: linear-gradient(180deg, #ADDCFF, #93EBFF);
+    padding: 50px 200px;
+   
+}
+
+#tratamentos h1{
+    font-family: 'Roboto Slab';
+    font-size: 40px;
+    text-align: center;
+}
+
+.line-cards{
+    margin-top: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  
+}
+
+.card-tratamento{
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    box-shadow: 2px 2px 4px #00000020;
+    transition: .5s;
+}
+
+
+.card-tratamento:hover{
+    opacity: .7;
+}
+
+
+@keyframes ho {
+    0%{
+       border-radius: 5px;
+    }
+
+    100%{
+        border-radius: 40px;
+    }
+}
+
+
+.card-tratamento .line-top-tratamento{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-tratamento .line-top-tratamento h3{
+    font-family: 'Roboto Slab';
+}
+
+.card-tratamento .line-top-tratamento img{
+    width: 50px;
+    height: auto;
+}
+
+.card-tratamento .line-mid-tratamento {
+    align-self: flex-end;
+    font-family: 'Roboto slab';
+    font-size: 14px;
+    color: #5D5555;
+}
+
+
+@media screen and (max-width: 1300px) { 
+    #tratamentos{
+        padding: 50px 100px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1000px) { 
+
+    #tratamentos{
+        min-height: max-content;
+        padding: 50px 30px 80px 30px; 
+    }
+ 
+    .line-cards{
+        margin-top: 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+@media screen and (max-width: 750px) {
+  
+    #tratamentos h1{
+        font-size: 30px;
+    }
+        
+    .line-cards{
+        margin-top: 50px;
+    }
+    
+    .card-tratamento .line-mid-tratamento {
+        font-size: 13px;
+    }
+        
+    .card-tratamento{
+        padding: 15px;
+    }
+
+        
+    .card-tratamento .line-top-tratamento h3{  
+        font-size: 17px;
+    }
+
+    .card-tratamento .line-top-tratamento img{
+        width: 40px;
+        height: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) { 
+
+    #tratamentos{
+        padding: 50px 30px;
+    
+    }
+
+    .line-cards{
+        grid-template-columns: 1fr;
+    }
+
+    #tratamentos h1{
+        font-size: 25px;
+    }
+
+}

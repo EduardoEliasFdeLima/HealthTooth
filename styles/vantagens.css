@@ -1,0 +1,236 @@
+#vantagens{
+    width: 100%;
+    height: max-content;
+    padding: 150px 200px;
+}
+
+.content-vantagens{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+
+.img-vantagens{
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+  
+}
+
+
+
+.img-vantagens img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+
+.img-vantagens img:hover{
+    filter: brightness(.9);
+}
+
+.img-vantagens::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -9;
+    
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #8cd8dc, #2c6da7);
+    border-radius: 10px;
+}
+
+.txt-vantagens{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.txt-vantagens h1{
+    font-family: 'Roboto Slab';
+}
+
+.txt-vantagens p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px;
+    color: #566973; 
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #3386B3, #1691FC);
+    -webkit-background-clip: text; /* Aplica o gradiente ao texto */
+    -webkit-text-fill-color: transparent; /* Faz o fundo ser transparente */
+    font-size: 48px;
+    font-weight: bold;
+   
+}
+
+.txt-icons{
+  
+    background-color: #cbf2f476;
+    color: #394971;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+
+    font-size: 15px;
+    height: 65px;
+    justify-content: center;
+   
+}
+
+.txt-icons .iconn{
+    margin: auto;
+}
+
+.txt-icons i{
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+#photo{
+    transition: opacity 1s ease-in-out; /* Transição suave para a opacidade */
+    opacity: 1; /* Visível por padrão */
+}
+
+@media screen and (max-width: 1300px) { 
+    #vantagens{
+        padding: 100px 100px;
+    }
+
+    .txt-icons{
+        font-size: 12px;
+    }
+        
+    .txt-vantagens p{      
+        font-size: 16px;
+        margin-top: 15px;
+        line-height: 20px;
+    }
+        
+    .txt-vantagens h1{
+        font-size: 45px;
+    }
+
+    .content-vantagens{
+        gap: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) { 
+
+    .txt-vantagens h1{
+        font-size: 40px;
+    }
+
+    #vantagens{
+        padding: 100px 30px;
+    }
+
+    .content-vantagens{
+        gap: 30px;    
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+
+    #vantagens{
+        padding: 60px 30px;
+        height: max-content;
+    }
+        
+    .content-vantagens{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+        
+    .img-vantagens{
+        overflow: hidden;
+        border-radius: 10px;
+        width: 100%;
+    
+        height: 200px;
+        margin: auto;
+    }
+
+    .img-vantagens img{
+        margin-top: -50px;
+        height: auto;
+    }
+
+    .txt-vantagens{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+ }
+
+
+ 
+@media screen and (max-width: 550px) { 
+            
+    .txt-icons{
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+         
+    .content-vantagens{
+        gap: 30px;
+    }
+
+        
+    .txt-icons i{
+        font-size: 14px;
+        margin-left: 2px;
+    }
+
+}
+
+
+ 
+@media screen and (max-width: 450px) { 
+
+    
+    .txt-vantagens h1{
+        font-size: 35px;
+    }
+
+    .txt-vantagens p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .img-vantagens img{
+        margin-top: -10px;
+        height: auto;
+    }
+        
+    .txt-icons{
+        grid-template-columns: repeat(2, 1fr);
+        height: 100px;
+        justify-content: space-evenly;
+       
+    }
+
+}
