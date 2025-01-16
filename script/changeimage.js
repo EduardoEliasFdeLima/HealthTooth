@@ -1,7 +1,7 @@
 
 const imageElement = document.getElementById('photo');
 const images = [
-  'images/paciente.jpg',
+  'images/paciente.png',
   'images/paciente2.jpg',
 ];
 
