@@ -1,8 +1,8 @@
 
 const imageElement = document.getElementById('photo');
 const images = [
-  './src/images/paciente.jpg',
-  './src/images/paciente2.jpg',
+  'images/paciente.jpg',
+  'images/paciente2.jpg',
 ];
 
 let currentIndex = 0;
