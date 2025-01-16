@@ -6,7 +6,6 @@ header{
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    display: flex;
     flex-direction: column;   
 }
 
@@ -305,7 +304,8 @@ header nav{
     .content{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+    
+        justify-content: space-between;
         align-items: center;
         padding: 0px 10px;
     }
@@ -434,6 +434,14 @@ header nav{
 
 
 @media screen and (max-width: 450px) { 
+
+    header{
+        width: 100%;
+        min-height: 95vh;
+        height: 95vh;
+    }
+
+
     .left_text h1{
         font-size: 28px;
         line-height: 32px;
@@ -455,9 +463,13 @@ header nav{
     }
 
     #smile{
-        top: 270px;
+        top: 320px;
         right: 40px;
         font-size: 40px;
+    }
+
+    .content{
+        padding-top: 30px;
     }
 
     #tooth{
@@ -474,11 +486,11 @@ header nav{
 
    
     .menu_items li a{ 
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .line_bg{
-        width: 100px;
+        width: 120px;
         height: 1000px;
         top: 100px;
         background: linear-gradient(to left, #88D7FC, #489FC9);
@@ -491,3 +503,14 @@ header nav{
     }
 
 }
+
+
+@media screen and (max-width: 390px) {
+
+    .menu_items li a{ 
+        font-size: 11px;
+    }
+    .content{
+        padding-top: 0px;
+    }
+} 
