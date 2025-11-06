@@ -1,10 +1,11 @@
 footer{
     position: relative;
     font-family: 'Roboto';
-    padding: 100px 200px 0 200px ;
+    padding: 100px 100px 0 100px ;
     height: 70vh;
-    background: linear-gradient(to bottom, #88D7FC, #489FC9);
-    background: linear-gradient(to bottom, #88D7FC, #4a5bb2);
+    /* background: linear-gradient(to bottom, #88D7FC, #489FC9);
+    background: linear-gradient(to bottom, #88D7FC, #4a5bb2); */
+    background: linear-gradient(to bottom, #9ADFFF, #8CCFFF);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,7 +21,8 @@ footer{
     -webkit-background-clip: text; /* Aplica o gradiente ao texto */
     -webkit-text-fill-color: transparent; /* Faz o fundo ser transparente */
     font-family: 'Roboto Slab';
-    font-size: 48px;
+    /* font-size: 48px; */
+    font-size: 80px;
     font-weight: bold;
 }
 
@@ -46,13 +48,14 @@ footer{
  
 }
 
-
 .text-alert{
     opacity: .3;
     margin-top: 60px;
     display: flex;
     flex-direction: row;
- 
+    position: absolute;
+    bottom: 15px;
+    width: 500px;
     gap: 20px;
     color: #000;
     font-size: 14px;
@@ -92,11 +95,9 @@ input[type="text"]{
     border-radius: 2px;
 }
 
-
 input::placeholder{
     color: #ffffff51;
 }
-
 
 input[type="button"]{
     border: none;
@@ -109,7 +110,6 @@ input[type="button"]{
     transition: .5s;
 }
 
-
 input[type="button"]:hover{
     opacity: .7;
 }
@@ -117,6 +117,27 @@ input[type="button"]:hover{
 form p{
     font-size: 14px;
     color: #fff;
+}
+
+.linep{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    font-family: 'Roboto slab';
+    color: #2C5B7B;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+
+.footer-pai{
+    width: 100%;
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
@@ -130,6 +151,23 @@ form p{
         max-width: 60%;
     }
 
+        
+    .left-footer h1{
+        font-size: 60px;
+    }
+
+    .right-footer{
+        display: flex;
+        justify-content: right;
+    }
+
+    .text-footer-right {
+        width: 80%;
+    }
+
+    .text-footer-right img{
+        width: 100%;
+    }
 
 }
 
@@ -138,14 +176,13 @@ form p{
 
     footer{ 
         height: max-content;
-        padding: 70px 30px 0 30px;
+        padding: 70px 30px 120px 30px;
     }
 
     form{
         padding: 30px 20px;
     }
 
-        
     .left-footer h1{
        font-size: 40px;
     }
@@ -153,12 +190,27 @@ form p{
     .left-footer{
         max-width: 55%;
     }
-
-        
+ 
     .left-footer ul li{
         font-size: 17px;
         line-height: 23px;
     }
+
+         
+    .text-footer-right {
+        width: 100%;
+    }
+
+    .footer-pai{
+        gap: 100px;
+        flex-direction: column;
+    }
+
+     .right-footer{
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 
@@ -180,8 +232,7 @@ form p{
         justify-content: space-between;
         gap: 50px;
     }
-
-        
+  
     .text-alert{
         margin-top: 50px;
     }
@@ -204,7 +255,6 @@ form p{
         gap: 0px;
     }
 
-        
     .left-footer ul li{
         font-size: 16px;
 
@@ -214,11 +264,19 @@ form p{
 
     form{
         border: 1px solid #fff;
-
     }
-
     .text-alert{
        font-size: 12px;
+       width: 300px;
     }
+
+        
+    .linep{
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
 
  }
