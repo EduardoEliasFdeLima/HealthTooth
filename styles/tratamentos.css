@@ -10,7 +10,8 @@
 
 #tratamentos h1{
     font-family: 'Roboto Slab';
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 60px;
     text-align: center;
 }
 
@@ -19,7 +20,8 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    /* gap: 16px; */
+    gap: 50px;
   
 }
 
@@ -27,7 +29,9 @@
     background-color: #fff;
     border-radius: 5px;
     margin-bottom: 10px;
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 50px 20px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,11 +40,9 @@
     transition: .5s;
 }
 
-
 .card-tratamento:hover{
     opacity: .7;
 }
-
 
 @keyframes ho {
     0%{
@@ -52,56 +54,123 @@
     }
 }
 
-
 .card-tratamento .line-top-tratamento{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .card-tratamento .line-top-tratamento h3{
     font-family: 'Roboto Slab';
+    font-size: 30px;
 }
 
 .card-tratamento .line-top-tratamento img{
-    width: 50px;
+    /* width: 50px; */
+    width: 70px;
     height: auto;
 }
 
 .card-tratamento .line-mid-tratamento {
     align-self: flex-end;
     font-family: 'Roboto slab';
-    font-size: 14px;
+    /* font-size: 14px; */
+    margin-top: 30px;
+    font-size: 24px;
     color: #5D5555;
 }
 
-
-@media screen and (max-width: 1300px) { 
+@media screen and (max-width: 1980px) {
     #tratamentos{
         padding: 50px 100px;
+    }
+    
+    .card-tratamento .line-mid-tratamento {
+        align-self: flex-end;
+        margin-top: 30px;
+        font-size: 18px;
     }
 
 }
 
+@media screen and (max-width: 1500px) {    
+    #tratamentos h1{
+        font-size: 50px;
+    }
 
+    #tratamentos{
+        padding: 50px 100px;
+    }
+
+    .card-tratamento .line-top-tratamento h3{
+        font-size: 23px;
+    }
+
+    .card-tratamento .line-top-tratamento img{
+        width: 50px;
+    }
+
+    .card-tratamento .line-mid-tratamento {
+        margin-top: 25px;
+        font-size: 16px;
+    }
+   
+    .line-cards{
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1300px) { 
+    #tratamentos{
+        min-height: max-content;
+        padding: 50px 100px;
+        padding-bottom: 100px;
+    }
+
+    #tratamentos h1{
+        font-size: 42px;
+    }
+    
+    .line-cards{
+        gap: 15px;
+    }
+
+}
 
 @media screen and (max-width: 1000px) { 
 
     #tratamentos{
         min-height: max-content;
-        padding: 50px 30px 80px 30px; 
+        padding: 50px 50px 80px 50px; 
     }
  
     .line-cards{
         margin-top: 50px;
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+  
+    .card-tratamento .line-top-tratamento h3{
+        font-size: 25px;
+    }
+
+    .card-tratamento .line-top-tratamento img{
+        width: 50px;
+    }
+
+    .card-tratamento .line-mid-tratamento {
+        margin-top: 20px;
+        font-size: 16px;
     }
 
 }
 
-
-
 @media screen and (max-width: 750px) {
+     #tratamentos{
+        padding: 50px 40px 80px 40px; 
+    }
   
     #tratamentos h1{
         font-size: 30px;
@@ -110,27 +179,25 @@
     .line-cards{
         margin-top: 50px;
     }
-    
-    .card-tratamento .line-mid-tratamento {
-        font-size: 13px;
-    }
         
     .card-tratamento{
         padding: 15px;
     }
-
         
     .card-tratamento .line-top-tratamento h3{  
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .card-tratamento .line-top-tratamento img{
         width: 40px;
-        height: auto;
+    }
+
+      .card-tratamento .line-mid-tratamento {
+        margin-top: 0px;
+        font-size: 14px;
     }
 
 }
-
 
 @media screen and (max-width: 550px) { 
 
