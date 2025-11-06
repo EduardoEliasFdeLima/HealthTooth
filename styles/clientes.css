@@ -16,13 +16,14 @@
     position: relative;
     margin-top: 10px;
     width: 100%;
-    height: 100vh;
+    height: max-content;
     background-color: #DFF5FD;
-    padding: 100px 200px;
+    padding: 200px 200px;
 }
 
 .lineBG h1{
     font-family: 'Roboto Slab';
+     font-size: 80px;
 }
 
 #left,#right{
@@ -37,7 +38,6 @@
     right: 30px;
 }
 
-
 .gradient-text2 {
     background: linear-gradient(to right, #284A77, #4A8ADD);
     -webkit-background-clip: text; /* Aplica o gradiente ao texto */
@@ -45,7 +45,6 @@
     font-size: 48px;
     font-weight: bold;
 }
-
 
 .slides{
     position: relative;
@@ -55,10 +54,12 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(6, 1fr);
+    /* gap: 50px; */
+    /* gap: 100px; */
+    gap: 20px;
     transition: 1s;
-
 }
 
 .card-slide{
@@ -88,7 +89,6 @@
     50%{
         margin-top: -10px;
     }
-  
 }
 
 .img-slide{
@@ -97,7 +97,6 @@
     border-radius: 100%;
     background-color: #e8eff1;
     overflow: hidden;
-
 }
 
 .img-slide img{
@@ -110,7 +109,6 @@
     padding: 20px 0;
 }
 
-
 .txt-slide h2{
     color: #1e2c2e;
     font-family: 'Roboto Slab';
@@ -118,6 +116,21 @@
 
 .txt-slide p{
     margin-top: 15px;
+}
+
+
+@media screen and (max-width: 1980px){
+    .lineBG{ 
+        padding: 100px 100px;
+        gap: 10px;
+    }
+
+    
+    .slides{
+          grid-template-columns: repeat(4, 1fr);
+          gap:30px;
+    }
+
 }
 
 
@@ -138,14 +151,21 @@
         width: 130px;
         height: 130px;
     }
+
+      
+    .slides{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+     .lineBG h1{
+        font-size: 60px;
+    }
 }
 
-
-
 @media screen and (max-width: 1000px) { 
-
     .lineBG h1{
-        font-size: 40px;
+        font-size: 60px;
     }
 
     .lineBG{ 
@@ -174,8 +194,6 @@
 
 }
 
-
-
 @media screen and (max-width: 750px) {
 
     .lineBG{
@@ -193,39 +211,37 @@
         overflow-y: scroll;
     }
 
+    .lineBG h1{
+        font-size: 50px;
+    }
+       
+    .slides{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
 }
 
-
-
- 
 @media screen and (max-width: 550px) { 
 
     .lineBG{
-        height: 70vh;
+        /* height: 70vh; */
     }
 
     .slides{
-        position: absolute;
-        width: 1230px;
-        margin-bottom: 100px;
-        min-height: 60vh;
-        left: 80px;
-        right: 0;
-        overflow: hidden;  
-        gap: 80px;
+        gap: 10px;
     }
 
     .card-slide{
         border-radius: 10px;
-        width: 280px;
-        height: 350px;
-        padding: 30px;
+        /* width: 280px;
+        height: 350px; */
+        padding: 10px;
     }
-
-        
+   
     .img-slide{
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 
     .txt-slide h2{
@@ -233,25 +249,21 @@
     }
 
     .txt-slide p{
-        font-size: inherit;
+        font-size: 14px;
     }
 
-        
-    #left,#right{
-        display: block;
+    
+    .lineBG h1{
+        font-size: 40px;
     }
-
-
+ 
 }
-
-
  
 @media screen and (max-width: 450px) { 
- 
     .lineBG{ 
-        padding: 40px 30px;
+        /* padding: 40px 30px;
         height: 70vh;
-        min-height: 600px;
+        min-height: 600px; */
     }
 
     .lineBG h1{
@@ -259,8 +271,8 @@
     }
     
     .slides{
-        padding: 0 auto;
-        gap: 150px;
+        /* padding: 0 auto;
+        gap: 150px; */
     }
 
 }
