@@ -28,8 +28,10 @@ header nav{
 
 
 .menu_items img{
-    width: 42px;
-    height: 42px;
+    /* width: 42px;
+    height: 42px; */
+    width: 60px;
+    height: 60px;
 }
 
 .menu_items li{
@@ -40,7 +42,9 @@ header nav{
 .menu_items li a{
     text-decoration: none;
     font-weight: 700;
-    font-size: 18px;
+    /* font-size: 18px; */
+    text-transform: uppercase;
+    font-size: 28px;
     color: #464787;
 }
 
@@ -61,10 +65,12 @@ header nav{
     color: #464787;
     font-family: 'Roboto';  
     font-weight: 500;
-    font-size: 15px;
+    /* font-size: 15px; */
+    font-size: 26px;
     cursor: pointer;
     transition: .5s;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .agenda:hover{
@@ -74,12 +80,13 @@ header nav{
 
 .line_bg{
     width: 310px;
-    height: 1200px;
+    /* height: 1200px; */
+    height: 120vh;
     background: linear-gradient(270deg, #88D7FC, #489FC9);
     position: absolute;
     z-index: -99;
     top: -50px;
-    left: 60%;
+    left: 65%;
     transform: rotate(-10deg);
 }
 
@@ -96,17 +103,18 @@ header nav{
 
 
 .left_text{
-    width: 65%;
-   margin-top: 120px;
-
+    width: 50%;
+    /* margin-top: 120px; */
+    margin-top: 10%;
 }
 
 .left_text h1{
     font-family: 'lato';
-    font-size: 64px;
+    /* font-size: 64px; */
+    font-size: 80px;
     color: #134571;
     font-weight: 800;
-    line-height: 72px;
+    line-height: 96px;
 }
 
 .left_text h2{
@@ -121,15 +129,17 @@ header nav{
 .left_text button{
     margin-top: 40px;
     background: linear-gradient(135deg, #2D76B6, #40A6FF);
-    padding: 10px 40px;
+    padding: 15px 40px;
     border: none;
     border-radius: 5px;
     color: #fff;
     font-family: 'Roboto slab';
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 35px;
     cursor: pointer;
     box-shadow: 2px 2px 4px #00000020;
     transition: 1s; 
+    text-transform: uppercase;
 }
 
 .left_text button:hover{
@@ -138,6 +148,7 @@ header nav{
 
 .left_text button i{
     font-size: 18px;
+    font-size: 33px;
 }
 
 .right_img{
@@ -145,8 +156,9 @@ header nav{
     right: 180px;
     bottom: -10px;
     width: auto;
-    height: 75vh;
-    max-height: 700px;
+    /* height: 75vh; */
+    height: 80vh;
+    /* max-height: 700px; */
     align-self: flex-end;
     transition: 1s ease-in-out;
 }
@@ -166,8 +178,6 @@ header nav{
     transform: rotate(35deg);
     /* animation: spin 5s infinite; */
 }
-
-
 
 #smile{
     position: absolute;
@@ -199,7 +209,20 @@ header nav{
     }
 }
 
-@media screen and (max-width: 1300px) {      
+@media screen and (max-width: 1980px) {      
+    .right_img{
+        right: 180px;
+        bottom: -10px;
+        width: auto;
+        height: 70vh;
+    }
+
+        
+    .left_text h1{
+        font-size: 64px;
+        line-height: 72px;
+    }
+
     header nav{
         padding: 0 80px;   
     }
@@ -207,15 +230,101 @@ header nav{
     .content{  
         padding: 0 100px;  
     }
+
+        
+    #tooth{
+        top: 50px;
+        left: 100px;
+        font-size: 65px;
+    }
+     
+    .menu_items li{
+        margin: 15px;
+    }
+
+    .menu_items li a{
+        font-size: 20px;
+    }
+
+    .agenda{
+        padding: 7px 10px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+         
+    .left_text h1{
+        font-size: 50px;
+        line-height: 64px;
+    }
+
+        
+    .left_text h2{
+        font-size: 44px; 
+        line-height: 52px;
+        margin-top: 20px;
+    }
+
+        
+    .left_text{
+        width: 50%;
+        margin-top: 5%;
+    }
+
+        
+    #tooth{
+        top: 500px;
+        color: #AADEFF;
+        font-size: 65px;
+        transform: rotate(35deg);
+    }
+
+
+}
+
+@media screen and (max-width: 1300px) {    
+        
+    .menu_items li{
+        margin: 10px;
+    }
+
+    .menu_items li a{
+        font-size: 17px;
+    }
+
+    #imagemenu{
+        margin-right: 25px;
+    }
+
+        
+    .menu_items img{
+        width: 42px;
+        height: 42px;
+    }
+
+    header nav{
+        padding: 0 80px;   
+    }
+
+    .content{  
+        padding: 0 100px;  
+    }
+
+    .left_text{
+        width: 60%;
+    }
      
     .left_text h1{
-        font-size: 56px;
+        font-size: 52px;
         font-weight: 800;
         line-height: 64px;
     }
 
     .left_text h2{
-        font-size: 40px;
+        font-size: 36px;
         font-weight: 800;
         line-height: 44px;
         margin-top: 30px;
@@ -228,8 +337,6 @@ header nav{
     }
         
     #tooth{
-        top: 50px;
-        left: 100px;
         font-size: 65px;
     }
 
@@ -237,6 +344,20 @@ header nav{
         top: 220px;
         right: 100px;
         font-size: 65px;
+    }
+
+        
+    .line_bg{
+        width: 250px;
+        left: 60%;
+    }
+
+    .left_text button{
+        padding: 12px 25px;
+        font-size: 25px;
+    }
+     .left_text button i{
+        font-size: 25px;
     }
 }
 
@@ -266,8 +387,13 @@ header nav{
 
     .menu_items li{
         text-decoration: none;
-        margin: 15px;
+        margin: 12px;
     }
+
+    .menu_items li a{
+        font-size: 15px;
+    }
+
         
     .right_img{
         right: 10px;
@@ -282,12 +408,10 @@ header nav{
     }
   
     #imagemenu{
-        margin-right: 50px;
+        margin-right: 25px;
     }
 
     #tooth{
-        top: 50px;
-        left: 50px;
         font-size: 50px;
     }
 
@@ -295,6 +419,26 @@ header nav{
         top: 160px;
         right: 60px;
         font-size: 50px;
+    }
+
+    .left_text button{
+        margin-top: 40px;
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+
+        
+    .left_text button i{
+        font-size: 18px;
+    }
+         
+    .agenda{
+        font-size: 15px;
+    }
+
+    .line_bg{
+        width: 200px;
+        left: 65%;
     }
 }
 
@@ -330,11 +474,14 @@ header nav{
     .right_img{
         position: relative;
         align-self: center;
+        height: auto;
+        width: 50vh;
+
     }
 
 
     #imagemenu{
-        margin-right: 80px;
+        margin-right: 10px;
     }
     
 
@@ -348,13 +495,18 @@ header nav{
     }
 
     .menu_items li a{ 
-        font-size: 15px;
+        font-size: 13px;
+    }
+    
+    .agenda{
+        font-size: 10px;
+        padding: 5px 8px;
+        border: 1px solid #464787;
     }
         
     .line_bg{
         width: 200px;
         height: 1000px;
-
         top: 200px;
         left: 20%;
         transform: rotate(-95deg);
@@ -364,11 +516,9 @@ header nav{
 
 
 @media screen and (max-width: 550px) { 
-
     header nav{
         padding: 0 20px;   
     }
-
 
     #imagemenu{
         margin-right: 10px;
@@ -378,6 +528,7 @@ header nav{
         right: 10px;
         bottom: -10px;
         height: auto;
+        width: 50vh;
     }
 
     .menu_items li{
@@ -387,8 +538,7 @@ header nav{
     .menu_items li a{ 
         font-size: 12px;
     }
-
-        
+ 
     .agenda{
         padding: 5px 8px;
         border-radius: 3px;
@@ -434,6 +584,11 @@ header nav{
 
 
 @media screen and (max-width: 450px) { 
+    
+    #imagemenu{
+        margin-right: 0px;
+    }
+
 
     header{
         width: 100%;
@@ -443,8 +598,8 @@ header nav{
 
 
     .left_text h1{
-        font-size: 28px;
-        line-height: 32px;
+        font-size: 30px;
+        line-height: 40px;
     }
 
     
@@ -481,12 +636,17 @@ header nav{
     .agenda{
         padding: 4px 7px;
         border-radius: 3px;
-        font-size: 10px;
+        font-size: 8px;
     }
 
    
+     .menu_items img{
+        width: 25px;
+        height: 25px; 
+    }
+
     .menu_items li a{ 
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .line_bg{
@@ -500,6 +660,10 @@ header nav{
         right: 10px;
         bottom: -10px;
         height: auto;
+    }
+
+     .content{
+        padding-top: 0px;
     }
 
 }
