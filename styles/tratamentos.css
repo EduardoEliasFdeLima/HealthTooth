@@ -4,7 +4,7 @@
     min-height: 100vh;
     height: max-content;
     background: linear-gradient(180deg, #ADDCFF, #93EBFF);
-    padding: 50px 200px;
+    padding: 50px 300px;
    
 }
 
@@ -21,7 +21,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* gap: 16px; */
-    gap: 50px;
+    gap: 20px;
   
 }
 
@@ -83,7 +83,7 @@
 
 @media screen and (max-width: 1980px) {
     #tratamentos{
-        padding: 50px 100px;
+        padding: 50px 300px;
     }
     
     .card-tratamento .line-mid-tratamento {
@@ -94,7 +94,7 @@
 
 }
 
-@media screen and (max-width: 1500px) {    
+@media screen and (max-width: 1550px) {    
     #tratamentos h1{
         font-size: 50px;
     }
