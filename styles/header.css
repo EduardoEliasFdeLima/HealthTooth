@@ -15,7 +15,7 @@ header nav{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding: 0 180px;   
+    padding: 0 300px;   
 }
 
 .menu_items{
@@ -61,8 +61,8 @@ header nav{
     background: none;
     padding: 7px 10px;
     border-radius: 3px;
-    border: 2px solid #464787;
-    color: #464787;
+    border: 2px solid #ffffff;
+    color: #ffffff;
     font-family: 'Roboto';  
     font-weight: 500;
     /* font-size: 15px; */
@@ -74,18 +74,20 @@ header nav{
 }
 
 .agenda:hover{
-    background-color: #464787;
-    color: #fff;
+    background-color: #ffffff;
+    color: #414c6b;
 }
 
 .line_bg{
-    width: 310px;
+    /* width: 310px; */
+    width: 1000px;
     /* height: 1200px; */
     height: 120vh;
     background: linear-gradient(270deg, #88D7FC, #489FC9);
     position: absolute;
     z-index: -99;
-    top: -50px;
+    /* top: -50px; */
+     top: -100px;
     left: 65%;
     transform: rotate(-10deg);
 }
@@ -98,12 +100,12 @@ header nav{
     display: flex;
     flex-direction: row;
     justify-content: left;
-    padding: 0 200px;
+    padding: 0 300px;
 }
 
 
 .left_text{
-    width: 50%;
+    width: 70%;
     /* margin-top: 120px; */
     margin-top: 10%;
 }
@@ -131,7 +133,7 @@ header nav{
     background: linear-gradient(135deg, #2D76B6, #40A6FF);
     padding: 15px 40px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #fff;
     font-family: 'Roboto slab';
     /* font-size: 20px; */
@@ -171,8 +173,8 @@ header nav{
 
 #tooth{
     position: absolute;
-    top: 50px;
-    left: 200px;
+    top: 800px;
+    left: 500px;
     color: #AADEFF;
     font-size: 65px;
     transform: rotate(35deg);
@@ -211,7 +213,7 @@ header nav{
 
 @media screen and (max-width: 1980px) {      
     .right_img{
-        right: 180px;
+        right: 200px;
         bottom: -10px;
         width: auto;
         height: 70vh;
@@ -224,17 +226,17 @@ header nav{
     }
 
     header nav{
-        padding: 0 80px;   
+        padding: 0 300px;   
     }
 
     .content{  
-        padding: 0 100px;  
+        padding: 0 300px;  
     }
 
         
     #tooth{
-        top: 50px;
-        left: 100px;
+        top: 600px;
+        left: 400px;
         font-size: 65px;
     }
      
@@ -254,7 +256,11 @@ header nav{
 
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1550px) {
+     header nav{
+        padding: 0 100px;   
+    }
+
          
     .left_text h1{
         font-size: 50px;
@@ -280,6 +286,14 @@ header nav{
         color: #AADEFF;
         font-size: 65px;
         transform: rotate(35deg);
+    }
+
+      .content{  
+        padding: 0 100px;  
+    }
+
+     .right_img{
+        right: 120px;
     }
 
 
@@ -348,8 +362,8 @@ header nav{
 
         
     .line_bg{
-        width: 250px;
-        left: 60%;
+        width: 1000px;
+        left: 65%;
     }
 
     .left_text button{
@@ -413,6 +427,7 @@ header nav{
 
     #tooth{
         font-size: 50px;
+        left: 40px;
     }
 
     #smile{
@@ -437,7 +452,7 @@ header nav{
     }
 
     .line_bg{
-        width: 200px;
+        width: 500px;
         left: 65%;
     }
 }
@@ -502,6 +517,7 @@ header nav{
         font-size: 10px;
         padding: 5px 8px;
         border: 1px solid #464787;
+        color: #464787;
     }
         
     .line_bg{
