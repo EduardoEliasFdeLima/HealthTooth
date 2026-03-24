@@ -1,7 +1,7 @@
 footer{
     position: relative;
     font-family: 'Roboto';
-    padding: 100px 100px 0 100px ;
+    padding: 100px 300px 0 300px ;
     height: 70vh;
     /* background: linear-gradient(to bottom, #88D7FC, #489FC9);
     background: linear-gradient(to bottom, #88D7FC, #4a5bb2); */
@@ -140,6 +140,14 @@ form p{
     justify-content: space-between;
 }
 
+@media screen and (max-width: 1550px) {
+    
+    footer{ 
+        padding: 100px 100px 0 100px;
+    }
+
+
+ }
 
 @media screen and (max-width: 1300px) { 
 
